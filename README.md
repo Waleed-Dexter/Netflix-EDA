@@ -1,69 +1,50 @@
-# 📊 Exploratory Data Analysis (EDA) on Netflix Dataset
+# Netflix Dataset Exploratory Data Analysis (EDA)
 
-## 📌 Project Overview
-This project performs an **Exploratory Data Analysis (EDA)** on the Netflix dataset to understand:
-- Distribution of movies and TV shows
-- Trends across years, genres, and countries
-- Ratings and durations
-- Correlations among features
+## 📖 Project Overview
 
-The goal is to practice **data cleaning, visualization, and feature engineering** using Python libraries like `pandas`, `numpy`, `matplotlib`, and `seaborn`.
+This project provides a comprehensive **Exploratory Data Analysis (EDA)** of Netflix's content catalog using the 2021 Netflix Titles dataset. Through detailed analysis and visualization, we uncover insights about content distribution, trends, and patterns in Netflix's streaming library.
 
----
+### 🎯 Key Objectives
+- **Data Cleaning & Preprocessing**: Handle missing values, duplicates, and data quality issues
+- **Content Analysis**: Analyze distribution of movies vs TV shows, genres, ratings, and release patterns
+- **Geographic Insights**: Explore content production by countries and regions
+- **Temporal Trends**: Examine content release patterns over time
+- **Feature Engineering**: Create meaningful derived features for deeper analysis
+- **Visual Storytelling**: Present insights through compelling data visualizations
 
-## 📂 Dataset
-The dataset used is: **Netflix Titles 2021**  
-File: `netflix_titles_2021.csv`  
-- Rows: ~8800 titles  
-- Columns: `show_id`, `type`, `title`, `director`, `cast`, `country`, `date_added`, `release_year`, `rating`, `duration`, `listed_in`, `description`
+## 📊 Dataset Information
 
----
+- **Source**: Kaggle Netflix Movies and TV Shows Dataset (2021)
+- **Size**: 8,000+ titles
+- **Time Period**: Content from 1925 to 2021
+- **Features**: 12+ original features including title, type, director, cast, country, rating, duration, etc.
 
-## ⚙️ Steps in the Project
+### 🔍 Key Features Analyzed
+- **Content Type**: Movies vs TV Shows
+- **Release Year**: Temporal analysis of content
+- **Country**: Geographic distribution of content production
+- **Director & Cast**: Creator and talent analysis
+- **Genre**: Content categorization and trends
+- **Rating**: Age appropriateness classification
+- **Duration**: Movie length and TV show seasons
 
-1. **Data Import & Cleaning**
-   - Load dataset using Pandas
-   - Handle missing values (`director`, `cast`, `country`)
-   - Convert date fields to datetime
+## 🛠️ Technologies Used
 
-2. **Exploratory Data Analysis**
-   - Distribution of Movies vs TV Shows
-   - Count of releases per year
-   - Most common genres/categories
-   - Top contributing countries
+### Core Libraries
+- **pandas**: Data manipulation and analysis
+- **numpy**: Numerical computing
+- **matplotlib**: Basic plotting and visualization
+- **seaborn**: Statistical data visualization
+- **datetime**: Date and time handling
+- **collections**: Data structure utilities
 
-3. **Data Visualization**
-   - Histograms, Barplots, Boxplots
-   - Heatmaps (correlation)
-   - Interactive plots with Plotly
+### Environment
+- **Google Colab**: Cloud-based Jupyter notebook environment
+- **Python 3.x**: Programming language
+- **Jupyter Notebook**: Interactive development environment
 
-4. **Feature Engineering**
-   - Extract year, month from `date_added`
-   - Create binary features (e.g., is_movie, is_tv_show)
-   - Grouping and aggregations
+- **Netflix** for providing rich content data
+- **Kaggle** community for dataset availability
+- **Python** ecosystem for powerful data analysis tools
+- **Google Colab** for free computational resources
 
----
-
-## 📊 Visualizations
-- Movie vs TV Show distribution  
-- Content added over the years  
-- Top 10 countries with most content  
-- Genre popularity  
-
-(📌 Example plots will be shown here once generated)
-
----
-
-## 🛠️ Tech Stack
-- **Python**
-- **Pandas** → Data cleaning & manipulation  
-- **NumPy** → Numerical operations  
-- **Matplotlib / Seaborn** → Visualization  
-- **Plotly** → Interactive plots  
-
----
-
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/netflix-eda.git
